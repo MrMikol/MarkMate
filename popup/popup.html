@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MarkMate</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Current Tab Section -->
+    <div class="current-tab-section">
+      <h3>Save this page</h3>
+      <textarea id="comment-input" 
+                placeholder="Why are you saving this?"></textarea>
+      <button id="save-button">Save with Comment</button>
+    </div>
+    
+    <!-- Recent Bookmarks Section -->
+    <div class="recent-bookmarks-section">
+      <h3>Your Recent Bookmarks</h3>
+      <div id="bookmarks-list"></div>
+    </div>
+    
+    <!-- Footer with Donation Link -->
+    <div class="footer">
+      <a href="https://www.buymeacoffee.com/yourusername" 
+         target="_blank" 
+         id="donate-link">
+        Support this extension
+      </a>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
