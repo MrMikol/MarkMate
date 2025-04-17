@@ -2,32 +2,37 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>MarkMate</title>
+  <title>Micro Bookmark Comments</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
   <div class="container">
-    <!-- Current Tab Section -->
-    <div class="current-tab-section">
-      <h3>Save this page</h3>
+    <!-- Main Bookmark Section -->
+    <div class="bookmark-section">
+      <h3>Save with Comment</h3>
       <textarea id="comment-input" 
-                placeholder="Why are you saving this?"></textarea>
-      <button id="save-button">Save with Comment</button>
+                placeholder="Why are you saving this page?"></textarea>
+      <button id="save-button">Save Bookmark</button>
     </div>
     
-    <!-- Recent Bookmarks Section -->
-    <div class="recent-bookmarks-section">
-      <h3>Your Recent Bookmarks</h3>
+    <!-- Recent Bookmarks List -->
+    <div class="bookmarks-list-section">
+      <h3>Recent Bookmarks</h3>
       <div id="bookmarks-list"></div>
     </div>
     
-    <!-- Footer with Donation Link -->
-    <div class="footer">
-      <a href="https://www.buymeacoffee.com/yourusername" 
-         target="_blank" 
-         id="donate-link">
-        Support this extension
-      </a>
+    <!-- Payment Section -->
+    <div class="support-section">
+        <h4>Support Development</h4>
+        <div class="donation-input">
+          <span>$</span>
+          <input type="number" id="donation-amount" min="1" value="5" step="1">
+        </div>
+        <button id="donate-button">
+          <img src="icons/paypal.png" alt="">
+          Donate via PayPal
+        </button>
+        <p class="support-text">Your support helps improve this extension!</p>
     </div>
   </div>
   
